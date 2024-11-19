@@ -52,15 +52,23 @@ body {
 	transition: 0.3s;
 }
 
-#header p {
-	position: relative;
-	top: 80px;
-	left: 80px;
-	max-width: fit-content;
-	font-size: 40px;
+#header .Introduction {
+	margin: 0;
+	margin-left: 120px;
+
+	font-size: 35px;
 	font-weight: 800;
 }
 
-#header span {
+#header .name {
 	color: red;
+}
+
+.UI {
+	margin-bottom: -5px;
+	margin-top: 100px;
+	margin-left: 80px;
+
+	font-size: 25px;
+	font-weight: 200;
 }
