@@ -124,8 +124,10 @@ body {
 	padding: 0;
 }
 #about .info-link {
-	margin-right: auto;
+	margin-right: 40px;
 	cursor: pointer;
+	margin-bottom: 20px;
+	font-weight: 200;
 }
 #about .info-link::after {
 	content: "";
@@ -145,11 +147,20 @@ body {
 .show {
 	display: initial;
 }
-
 #about  .selected::after {
 	content: "";
 	height: 4px;
 	width: 50%;
 	background-color: red;
 	display: block;
+}
+
+#about .info-section span {
+	font-size: 20px;
+	color: red;
+	font-weight: 600;
+}
+#about .info-section p {
+	font-weight: 200;
+	font-size: medium;
 }
