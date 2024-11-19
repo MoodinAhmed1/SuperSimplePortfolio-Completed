@@ -14,7 +14,7 @@ body {
 
 /*HEADER SECTION*/
 #header {
-	height: 700px;
+	height: 700px; 
 	
 	background-image: url(Assets/Images/Capture.PNG);
 	background-size: 550px 550px;
@@ -80,7 +80,11 @@ body {
 #about .container {
 	height: 650px;
 	width: 100%;
-	padding: 50px 100px;
+	padding:100px;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 #about .header {
 	font-size: 50px;
@@ -88,21 +92,40 @@ body {
 	margin: 0;
 	margin-bottom: 20px;
 }
+
 .row {
 	width: 100%;
 	max-height: 100%;
 	display: flex;
+	column-gap: 20px;
 }
 .row .left-column{
-	width: 50%;
+	min-width: 50%;
 }
-
 #about .left-column .img-container {
-	height: 400px;
+	width: 100%;
+	height: 100%;
 	display: flex;
+	justify-content: flex-start;
+	align-items: top;
+}
+#about .left-column img {
+	object-fit: contain;
+	width: 100%;
+	height: 100%;
 }
 
-#about img {
-	width: 100%;
-	object-fit: contain;
+.row .right-column {
+	min-width: 50%;
+}
+
+.row .right-column .info-section {
+	max-width: 100%;
+}
+
+.hide {
+	display: none;
+}
+.show {
+	display: initial;
 }
