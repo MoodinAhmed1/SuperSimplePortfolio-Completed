@@ -388,3 +388,26 @@ a {
 	border: 2px solid rgb(33, 155, 255);
 	transform: translateY(-10px);
 }	
+
+#contact-me .column2 {
+	width: 50%;
+}
+.column2 h2 {
+	font-size: 40px;
+	font-weight: 800;
+	margin-top: 10px;
+}
+label {
+	display: block;
+	margin-bottom: 20px;
+}
+input, textarea {
+	width: 100%;
+	border: none;
+	border-radius: 4px;
+	padding: 3px;
+}
+textarea {
+	padding: 10px;
+	height: 60px;
+}
