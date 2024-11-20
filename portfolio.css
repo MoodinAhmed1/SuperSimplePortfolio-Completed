@@ -11,7 +11,10 @@ body {
 
 	margin: 0;
 }
-
+a {
+	text-decoration: none;
+	color: white;
+}
 /*HEADER SECTION*/
 #header {
 	height: 700px; 
@@ -43,6 +46,8 @@ body {
 #header .container nav ul li {
 	cursor: pointer;
 	max-height: fit-content;
+	font-weight: 200;
+	font-size: 20px;
 }
 #header .container nav ul li::after {
 	content: "";
