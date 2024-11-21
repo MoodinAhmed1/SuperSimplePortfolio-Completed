@@ -2,9 +2,9 @@
 	box-sizing: border-box;
 	font-family: Poppins;
 }
-body {
+body, html {
 	width: 100%;
-	height: 100vh;
+	height: auto;
 
 	color: white;
 	background-color: black;
@@ -17,14 +17,14 @@ a {
 }
 /*HEADER SECTION*/
 #header {
-	height: 700px; 
-	
-	background-image: url(Assets/Images/Capture.PNG);
-	background-size: 550px 550px;
-	background-repeat: no-repeat;
-	background-position-x: 720px;
-	background-position-y: 80px;
-	background-attachment: fixed;
+	width: 100%;
+	height: auto; 
+	margin-bottom: 6vw;
+}
+#header .container {
+	height: auto;
+	margin: 0 auto;
+	padding: 2vw;
 }
 #header .container nav {
 	width: 100%;
@@ -32,22 +32,24 @@ a {
 	justify-content: space-between;
 }
 #header .container nav img {
-	margin-left: 50px;
-	margin-top: 20px;
+	margin-left: 2vw;
+	margin-top: 2vw;
+	width: 20vw;
 }
 #header .container nav ul {
 	display: flex;
-	justify-content: space-around;
-	flex-basis: 650px;
-	margin-top: 30px;
+	justify-content: flex-end;
+	margin-top: 2vw;
 	list-style: none;
 	max-height: fit-content;
+	flex: 1;
 }
 #header .container nav ul li {
 	cursor: pointer;
 	max-height: fit-content;
 	font-weight: 200;
-	font-size: 20px;
+	font-size: 1.5vw;
+	margin-right: 2vw;
 }
 #header .container nav ul li::after {
 	content: "";
@@ -82,7 +84,7 @@ a {
 
 /*------------about section------------*/
 #about .container {
-	height: 650px;
+	height: auto;
 	width: 100%;
 	padding:50px 100px;
 	
@@ -165,7 +167,7 @@ a {
 }
 #about .info-section p {
 	font-weight: 200;
-	font-size: medium;
+	font-size: 14px;
 }
 
 /*-----------Projects section--------------*/
@@ -260,6 +262,10 @@ a {
 	position: relative;
 	overflow: hidden;
 	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 #services .service h2 {
 	text-align: center;
@@ -267,14 +273,15 @@ a {
 	color: white;
 }
 #services .service p {
+	max-width: 90%;
 	text-wrap: wrap;
 	margin: 0;
 	padding: 20px;
 	text-align: center;
 }
 .service .services-icon{
-	width: 50px;
-	height: 50px;
+	width: 100px;
+	height: 100px;
 	padding: 10px 0 0 10px;
 }
 #services .service .service-layer {
@@ -293,7 +300,6 @@ a {
 	opacity: 0;
 
 	transition: 0.3s;
-
 }
 .service-layer .img-container{
 	padding: 10px;
@@ -304,13 +310,10 @@ a {
 	height: 30px;
 	width: 30px;
 }
-#services .service:hover .service-layer {
-	opacity: 1;
-	transform: translateY(-20px);
-}
-#services .service:hover {
-	transform: translateY(-20px);
+#services .service:hover{
+	transform: translateY(-15px);
 	transition: 0.4s;
+	background-color: red;
 }
 
 /*------------------Contact me---------------*/
@@ -408,14 +411,12 @@ input, textarea {
 	border-radius: 4px;
 	padding: 3px;
 }
-textarea {
-	padding: 10px;
-	height: 60px;
-}
 
-@media (max-width: 800px) {
-	html {
+@media (max-width: 799px) {
+	html, body {
 		overflow-x: hidden;
+		height: 100vh;
+		width: 100%;
 	}
 	#header {
 		background-image: none;
@@ -433,24 +434,31 @@ textarea {
 	}
 	#header .container nav img {
 		max-width: fit-content;
+		margin: 0;
 	}
 	#header .container nav ul {
 		justify-content: space-evenly;
+		flex-wrap: wrap;
+		padding-left: 0;
 	}
 	#header .Introduction {
 		max-width: fit-content;
-		margin: 0 auto;
 		font-size: 50px;
+		margin: 0;
+		text-align: center ;
 	}
 	#header .role {
-		margin-left: -40px;
+		margin: 0;
 		max-width: fit-content;
 		font-size: 40px;
 	}
 	#header .introduction-div {
-		min-width: fit-content;
-		max-width: fit-content;
-		margin: 100px auto;
+		width: 100%;
+		margin-top: 50px;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 	#header .container{
 		padding: 2px;
@@ -459,6 +467,8 @@ textarea {
 /*----------about me----------*/
 	#about .container {
 		height: auto;
+		padding: 25px 50px;
+		margin-top: 100px;
 	}
 	#about .header {
 		text-align: center;
@@ -474,7 +484,8 @@ textarea {
 		justify-content: center;
 	}
 	#about .left-column img {
-		height: auto;
+		width: 100%;
+		height: 400px;
 	}
 
 	#about .right-column {
@@ -482,5 +493,145 @@ textarea {
 	}
 	#about nav ul {
 		font-size: 20px;
+		justify-content: center;
+		margin-bottom: 0;
 	}
-} 
+
+	/*-----Services----*/	
+	#services{
+		width: 100%;
+		height: auto;
+	}
+	#services .container {
+		max-width: fit-content;
+		padding: 25px 50px;
+		justify-content: center;
+	}
+	#services .services-grid {
+		grid-template-columns: 1fr;
+	}
+	#services .service {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		position: relative;
+		margin-bottom: 20px;
+	}
+
+
+	/*------projects------*/
+	#projects, #projects .container {
+		height: auto;
+	}
+	#projects .container {
+		padding: 25px 50px;
+	}
+	#projects .grid {
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+	#projects img,
+	#projects .text-layer,
+	#projects .project-priv {
+		width: 100%;
+		height: 500px;
+	}
+	#projects .project-priv {
+		margin-bottom: 40px;
+	}
+
+	/*------Contact----------*/
+	#contact-me, #contact-me .container{
+		height: auto;
+		width: 100%;
+	}
+	#contact-me .container{
+		padding: 25px 50px;
+	}
+	#contact-me .row {
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		margin: 2px;
+		height: fit-content;
+	}
+	#contact-me .row .column1 {
+		margin-bottom: 20px;
+		width: 100%;
+		height: auto;
+	}
+	#contact-me .column2 {
+		width:fit-content;
+		width: 100%;
+		height: auto;
+	}
+	#contact form {
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media (min-width:800px) and (max-width: 1399px) {
+
+}
+
+@media (min-width: 1400px) {
+	#header nav {
+		margin-bottom: 6vw;
+	}
+	#header .introduction-div {
+		max-width: fit-content;
+		margin: 2vw auto 2vw 10vw;
+	}
+	#header .introduction {
+		font-size: 2vw;
+		margin-left: 10vw;
+	}
+	#header .role {
+		margin-bottom: -0.5vw;
+		margin-top: 2vw;
+		margin-left: 6vw;
+		font-size: 2vw;
+	}
+
+	/*about*/
+	#about {
+		max-width: 100%;
+	}
+	#about .container {
+		max-width: 85vw;
+		margin: 0 auto;
+		padding: 1vw 2vw;
+	}
+	.header {
+		font-size: 3vw;
+		margin-bottom: 1.3vw;
+	}
+	#about .row {
+		column-gap: 10vw;
+	}
+	#about .left-column img {
+		height: 40vw;
+	}
+	.row .right-column {
+		padding-top: 2vw;
+	}
+	#about .info-link {
+		margin-right: 4vw;
+		margin-bottom: 2vw;
+		font-size: 1.7vw;
+	}
+	#about .info-link::after  {
+		height: 0.4vw;
+	}
+	#about .selected::after {
+		height: 0.4vw;
+	}
+	#about .info-section span{
+		font-size: 1.7vw;
+	}
+	#about .info-section p {
+		font-size: 1.1vw;
+	}
+}
