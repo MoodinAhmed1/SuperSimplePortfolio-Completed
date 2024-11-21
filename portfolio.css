@@ -117,6 +117,7 @@ a {
 }
 
 .row .right-column {
+	width: 100%;
 	min-width: 50%;
 	padding-top: 20px;
 }
@@ -411,3 +412,75 @@ textarea {
 	padding: 10px;
 	height: 60px;
 }
+
+@media (max-width: 800px) {
+	html {
+		overflow-x: hidden;
+	}
+	#header {
+		background-image: none;
+		height: auto;
+	}
+	#header .container {
+		height: auto;
+	}
+	#header .container nav {
+		flex-direction: column;
+	}
+	.logo-div {
+		display: flex;
+		justify-content: center;
+	}
+	#header .container nav img {
+		max-width: fit-content;
+	}
+	#header .container nav ul {
+		justify-content: space-evenly;
+	}
+	#header .Introduction {
+		max-width: fit-content;
+		margin: 0 auto;
+		font-size: 50px;
+	}
+	#header .role {
+		margin-left: -40px;
+		max-width: fit-content;
+		font-size: 40px;
+	}
+	#header .introduction-div {
+		min-width: fit-content;
+		max-width: fit-content;
+		margin: 100px auto;
+	}
+	#header .container{
+		padding: 2px;
+	}
+
+/*----------about me----------*/
+	#about .container {
+		height: auto;
+	}
+	#about .header {
+		text-align: center;
+	}
+	#about .row {
+		display: flex;
+		flex-direction: column;
+	}
+	#about .left-column{
+		width: 100%;
+	}
+	#about .left-column .img-container{
+		justify-content: center;
+	}
+	#about .left-column img {
+		height: auto;
+	}
+
+	#about .right-column {
+		width: 100%;
+	}
+	#about nav ul {
+		font-size: 20px;
+	}
+} 
