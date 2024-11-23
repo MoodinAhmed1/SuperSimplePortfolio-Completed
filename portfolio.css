@@ -21,15 +21,20 @@ a {
 /*HEADER SECTION*/
 #header {
 	width: 100%;
-	height: auto; 
-	margin-bottom: 100px;
+	height: 700px; 
+	background-image: url("/Assets/Images/R\ \(2\).png");
+	
+	background-position-x: 600px;
+	background-position-y: 100px ;
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-attachment: fixed;
 }
 #header .container {
 	height: auto;
 
 	padding: 50px;
 	padding-top: 0;
-	margin-bottom: 100px;
 }
 #header .container nav {
 	width: 100%;
@@ -56,8 +61,10 @@ a {
 	cursor: pointer;
 	max-height: fit-content;
 	font-weight: 200;
-	font-size: 26px;
+	font-size: 24px;
 	margin-right: 20px;
+	background-color: black;
+
 }
 #header .container nav ul li::after {
 	content: "";
@@ -197,6 +204,7 @@ a {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 20px;
+	padding: 0 50px;
 }
 #projects .project-priv {
 	height: 400px;
@@ -240,7 +248,7 @@ a {
 	font-size: 20px;
 	font-weight: 200;
 	line-height: 25px;
-	width: 100%;
+	width: 90%;
 	font-family: poppins;
 }
 #projects .text-layer h1 {
@@ -273,6 +281,7 @@ a {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	column-gap: 20px;
+	padding: 0 50px;
 }
 #services .service {
 	background-color: gray;
@@ -405,6 +414,9 @@ input, textarea {
 
 
 @media (max-width: 499px) {
+	#header {
+		height: auto;
+	}
 	#header .container {
 		margin-bottom: 25px;
 		padding: 25px;
@@ -428,7 +440,7 @@ input, textarea {
 		padding:0 ;
 	}
 	#header .container nav ul li {
-		font-size: 4vw;
+		font-size: 14px;
 		width: 100%;
 		text-align: center;
 	}
@@ -520,6 +532,7 @@ input, textarea {
 	}
 	#services .services-grid {
 		grid-template-columns: 1fr;
+		padding: 0;
 	}
 	#services .service {
 		height: auto;
@@ -552,15 +565,16 @@ input, textarea {
 	}
 	#projects .grid {
 		grid-template-columns: 1fr;
+		padding: 0;
 	}
 	#projects img,
-	#projects .text-layer,
-	#projects .project-priv {
+	#projects .text-layer {
 		width: 100%;
-		height: 500px;
+		height: 100%;
 	}
 	#projects .project-priv {
 		margin-bottom: 20px;
+		height: 350px;;
 	}
 
 	/*------Contact----------*/
@@ -598,6 +612,9 @@ input, textarea {
 	}
 }
 @media (min-width: 500px) and (max-width: 799px) {
+	#header {
+		height: auto;
+	}
 	.container > h1 {
 		font-size: 70px;
 		text-align: center;
@@ -614,7 +631,7 @@ input, textarea {
 		flex-wrap: wrap;
 	}
 	#header .container nav ul li {
-		font-size: 26px;
+		font-size: 14px;
 	}
 	#header .Introduction, #header .role {
 		margin: 0;
@@ -622,7 +639,8 @@ input, textarea {
 	}
 	#header .introduction-div {
 		width: 100%;
-		margin: 100px 0;
+		margin: 0;
+		padding-top: 20px;
 
 		display: flex;
 		flex-direction: column;
@@ -656,11 +674,13 @@ input, textarea {
 	#services .services-grid {
 		grid-template-columns: 1fr;
 		row-gap: 24px;
+		padding: 0;
 	}
 
 	/*------projects------*/
 	#projects .grid {
 		grid-template-columns: 1fr;
+		padding: 0;
 	}
 	#projects .project-priv{
 		height: 300px;
@@ -701,12 +721,14 @@ input, textarea {
 	.services-grid {
 		grid-template-columns: 1fr 1fr;
 		row-gap: 20px;
+		padding: 0;
 	}
 
 	#projects .grid {
 		grid-template-columns: 1fr 1fr;
 		max-width: 100%;
 		margin: 0 auto;
+		padding: 0;
 		gap: 30px;
 	}
 	#projects img{
@@ -716,7 +738,7 @@ input, textarea {
 		height:400px;
 	}
 #contact-me .container {
-	padding: 25px;
+	padding: 85px 50px;
 }
 
 }
