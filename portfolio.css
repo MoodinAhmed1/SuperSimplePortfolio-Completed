@@ -213,7 +213,6 @@ a {
 
 	transition: height 0.3s ease, opacity 0.3s ease;
 	background: linear-gradient(to top, black, transparent);
-
 }
 #projects .project-priv:hover .text-layer {
 	height: 100%;
@@ -412,7 +411,191 @@ input, textarea {
 	padding: 3px;
 }
 
-@media (max-width: 799px) {
+
+
+@media (max-width: 699px) {
+	html, body {
+		overflow-x: hidden;
+		height: 100vh;
+		width: 100%;
+	}
+	#header {
+		height: auto;
+	}
+	#header .container {
+		height: auto;
+		margin-bottom: 150px;
+		margin-top: 25px;
+	}
+	#header .container nav {
+		flex-direction: column;
+		margin: 0 auto;
+	}
+	.logo-div {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 10px;
+	}
+	#header .container nav img {
+		width: 50%;
+		margin: 0;
+	}
+	#header .container nav ul {
+		flex-direction: column;
+		padding:0 ;
+	}
+	#header .container nav ul li {
+		font-size: 28px;
+		width: 100%;
+		text-align: center;
+	}
+
+	#header .Introduction {
+		max-width: fit-content;
+		font-size: 50px;
+		margin: 0;
+		text-align: center ;
+		line-height: 100%;
+	}
+	#header .role {
+		margin: 0;
+		max-width: fit-content;
+		font-size: 40px;
+		margin-top: 25px;
+	}
+	#header .introduction-div {
+		width: 100%;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		margin-top: 0%;
+	}
+
+
+/*----------about me----------*/
+	#about .container {
+		height: auto;
+		padding: 25px 50px;
+	}
+	#about .header {
+		text-align: center;
+		font-size: 48px;
+	}
+	#about .row {
+		display: flex;
+		flex-direction: column;
+	}
+	#about .left-column{
+		width: 100%;
+	}
+	#about .left-column .img-container{
+		justify-content: center;
+	}
+	#about .left-column img {
+		width: 100%;
+		height: 400px;
+	}
+
+	#about .right-column {
+		width: 100%;
+	}
+	#about nav ul {
+		font-size: 20px;
+		justify-content: space-around;
+		margin-bottom: 0;
+	}
+	#about .info-link {
+		margin: 0;
+	}
+
+	/*-----Services----*/	
+	#services{
+		width: 100%;
+		height: auto;
+	}
+	#services .container {
+		max-width: fit-content;
+		padding: 25px 50px;
+		justify-content: center;
+		text-align: center;
+	}
+	#services .services-grid {
+		grid-template-columns: 1fr;
+	}
+	#services .service {
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		position: relative;
+		margin-bottom: 20px;
+	}
+	#services .service p{
+		max-width: 100%;
+	}
+
+
+	/*------projects------*/
+	#projects, #projects .container {
+		height: auto;
+	}
+	#projects .header {
+		font-size: 11vw;
+		text-align: center;
+	}
+	#projects .container {
+		padding: 25px 50px;
+	}
+	#projects .grid {
+		grid-template-columns: 1fr;
+	}
+	#projects img,
+	#projects .text-layer,
+	#projects .project-priv {
+		width: 100%;
+		height: 500px;
+	}
+	#projects .project-priv {
+		margin-bottom: 20px;
+	}
+
+	/*------Contact----------*/
+	#contact-me, #contact-me .container{
+		height: auto;
+		width: 100%;
+	}
+	#contact-me .container{
+		padding: 25px 25px;
+	}
+	#contact-me .header {
+		font-size: 45px;
+	}
+	#contact-me .row {
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		margin: 2px;
+		height: fit-content;
+	}
+	#contact-me .row .column1 {
+		margin-bottom: 20px;
+		width: 100%;
+		height: auto;
+	}
+	#contact-me .column2 {
+		width:fit-content;
+		width: 100%;
+		height: auto;
+	}
+	#contact form {
+		width: 100%;
+		height: auto;
+	}
+}
+@media (min-width: 700px) and (max-width: 799px) {
 	html, body {
 		overflow-x: hidden;
 		height: 100vh;
@@ -576,7 +759,7 @@ input, textarea {
 
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 9999px) {
 	#header nav {
 		margin-bottom: 6vw;
 	}
