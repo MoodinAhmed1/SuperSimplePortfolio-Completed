@@ -107,7 +107,6 @@ a {
 	flex-direction: column;
 	justify-content: center;
 	margin-bottom: 100px;
-
 }
 .header {
 	font-size: 50px;
@@ -202,12 +201,12 @@ a {
 }
 #projects .grid {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(1, 1fr);
 	gap: 20px;
 	padding: 0 50px;
 }
 #projects .project-priv {
-	height: 400px;
+	height: 600px;
 	width: 100%;
 	position: relative;
 	overflow: hidden;
