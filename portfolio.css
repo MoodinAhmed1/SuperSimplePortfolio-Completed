@@ -260,6 +260,30 @@ a {
 	border: 1px solid red;
 }
 
+/* Visit Button Style */
+#projects .visit-btn {
+	margin-top: 15px;
+	background-color: red;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 25px;
+	text-decoration: none;
+	font-family: poppins;
+	font-size: 16px;
+	font-weight: 500;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+}
+
+#projects .visit-btn:hover {
+	background-color: darkred;
+	transform: scale(1.05);
+}
+
+
 /*---------Services section--------------*/
 #services {
 	width: 100%;
