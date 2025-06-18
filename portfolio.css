@@ -240,21 +240,23 @@ a {
 }
 #projects .project-priv:hover .text-layer {
 	height: 100%;
+	width: 100%;
+	padding: 10px;
 	opacity: 1;
 }
 #projects .text-layer .text{
 	color: white;
-	font-size: 20px;
+	font-size: 0.9em;
 	font-weight: 200;
 	line-height: 25px;
 	width: 90%;
 	font-family: poppins;
 }
 #projects .text-layer h1 {
-	font-size: 20px;
+	font-size: 1.1em;
 	background-color: black;
 	font-weight: 700;	
-	margin: 0;
+	margin: 15px 0 0 0 ;
 	padding: 5px 25px;
 	border-radius: 10px;
 	border: 1px solid red;
